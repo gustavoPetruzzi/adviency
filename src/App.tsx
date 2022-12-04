@@ -1,4 +1,5 @@
 import "./App.css";
+import CustomListItem from "./components/custom-list-item/Custom-list-item";
 
 export const App = () => {
   const gifts: string[] = [
@@ -12,7 +13,7 @@ export const App = () => {
         <h1> Regalos: </h1>
         <ul>
           {gifts.map(gift => (
-            <li key={gift}>{gift}</li>
+            <CustomListItem key={gift}>{gift}</CustomListItem>
           ))}
         </ul>
       </div>
