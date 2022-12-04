@@ -1,3 +1,5 @@
+import "./App.css";
+
 export const App = () => {
   const gifts: string[] = [
     'Medias',
@@ -5,14 +7,15 @@ export const App = () => {
     'Vitel tone'
   ]
   return (
-    <>
-      <h1> Regalos </h1>
-      <ul>
-        {gifts.map(gift => (
-          <li key={gift}>{gift}</li>
-        ))}
-
-      </ul>
-    </>
+    <section className="main">
+      <div  className="gifts">
+        <h1> Regalos: </h1>
+        <ul>
+          {gifts.map(gift => (
+            <li key={gift}>{gift}</li>
+          ))}
+        </ul>
+      </div>
+    </section>
   )
 }
